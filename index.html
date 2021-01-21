@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GGuGGuoTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>GGuTel</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>AM 02:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>999%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">꾸꾸오톡</h1>
+      <p class="welcome-header__text">
+        꾸꾸들의 아이디를 만들고,<br />
+        어마 아바에게 메세지를 보내봐요.
+      </p>
+    </header>
+
+    <form action="friends.html" method="GET" id="login-form">
+      <input
+        name="username"
+        type="text"
+        required
+        placeholder="이메일 또는 핸드폰 번호"
+      />
+      <input name="password" type="password" required placeholder="비밀번호" />
+      <input type="submit" value="로그인" />
+      <a href="#">꾸꾸오톡 아이디 비밀번호 찾기</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
