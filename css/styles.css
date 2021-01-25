@@ -1,5 +1,5 @@
 /* font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"); */
 
 @import "reset.css";
@@ -8,11 +8,20 @@
 /* Components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
+  color: #2f363e;
   font-family: "Open Sans", sans-serif;
   /* font-family: "Nanum Gothic", sans-serif; */
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
