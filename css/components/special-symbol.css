@@ -1,3 +1,15 @@
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.575);
+  color: white;
+  font-weight: 700;
+}
+
 .red-dat-alert {
   position: absolute;
   right: -5px;
@@ -12,7 +24,21 @@
   left: 78px;
 }
 
+.red-dat-alert__more__position-control {
+  bottom: 18px;
+  left: 135px;
+}
+
+.special-symbol__rad-dat-position {
+  bottom: 60px;
+  left: 80px;
+}
+
 .content-line {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin: 15px 0px;
+}
+
+#exclamation-icon__setting {
+  color: rgba(255, 0, 0, 0.575);
 }
