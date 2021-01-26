@@ -1,0 +1,18 @@
+.red-dat-alert {
+  position: absolute;
+  right: -5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.575);
+}
+
+.red-dat-alert__position-control {
+  bottom: 18px;
+  left: 78px;
+}
+
+.content-line {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 15px 0px;
+}

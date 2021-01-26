@@ -6,6 +6,7 @@
 @import "variables.css";
 
 /* Components */
+@import "components/special-symbol.css";
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
@@ -15,6 +16,7 @@
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 body {
   color: #2f363e;
