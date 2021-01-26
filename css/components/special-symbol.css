@@ -39,6 +39,10 @@
   margin: 15px 0px;
 }
 
+.content-line__margin-plus {
+  margin: 40px 0px;
+}
+
 #exclamation-icon__setting {
   color: rgba(255, 0, 0, 0.575);
 }
