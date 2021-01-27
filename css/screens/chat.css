@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 11000vh;
+  height: 500vh;
 }
 
 #chat-screen .alt-header {
@@ -19,12 +19,24 @@
   z-index: 2;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 14px;
+  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -101,6 +113,7 @@
   padding: 5px 25px;
   align-items: center;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:first-child {
@@ -116,17 +129,19 @@
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: -20px;
+  right: 2px;
   top: 2px;
 }
 
 .reply__column:last-child > i {
-  right: 25px;
+  right: 50px;
   top: 12px;
 }
 
@@ -149,4 +164,26 @@
 
 .reply i {
   opacity: 0.5;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-grin-alt,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/*reply안에 어떤 엘레멘트가 focus되면.*/
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-grin-alt,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply input:focus {
+  width: 92vw;
+  transform: translateX(-12%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
