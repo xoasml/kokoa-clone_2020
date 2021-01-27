@@ -10,12 +10,20 @@
 .alt-header__title {
   font-size: 20px;
   font-weight: 700;
+  text-align: center;
 }
 
+.alt-header__column {
+  width: 33%;
+}
 .alt-header__column:first-child {
-  margin-right: auto;
+  text-align: left;
 }
 
 .alt-header__column:last-child {
-  margin-left: auto;
+  text-align: right;
+}
+
+.chat__fa-margin {
+  margin-left: 20px;
 }

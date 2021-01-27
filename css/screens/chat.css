@@ -1,0 +1,152 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 11000vh;
+}
+
+#chat-screen .alt-header {
+  background-color: #abc1d1;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#chat-screen .alt-header {
+  z-index: 1; /* z-index: layer를 지정 낮을수록 우선순위가 높음*/
+}
+
+#chat-screen .status-bar {
+  z-index: 2;
+}
+
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chat__timestamp {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+  text-align: center;
+  padding: 10px 13px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 43%;
+  margin-right: 15px;
+}
+
+.message__author {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 12px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.message__time {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+
+.message-row__own {
+  justify-content: flex-end;
+}
+
+.message-row__own .message__info {
+  flex-direction: row-reverse;
+}
+
+.message-row__own .message__bubble {
+  background-color: var(--mainColor);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 10px;
+  margin-left: 5px;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.reply__column:first-child {
+  width: 10%;
+}
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -20px;
+  top: 2px;
+}
+
+.reply__column:last-child > i {
+  right: 25px;
+  top: 12px;
+}
+
+.reply__column button {
+  background-color: var(--mainColor);
+  border: none;
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+}
+
+.reply__column button i {
+  opacity: 1;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply i {
+  opacity: 0.5;
+}

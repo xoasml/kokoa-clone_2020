@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - GGuGGuoTalk</title>
+  </head>
+  <body id="chat-screen">
+    <!-- 스테이터스 바 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>GGuTel</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>AM 02:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>999%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">GGuGGus</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg chat__fa-margin"></i></span>
+      </div>
+    </header>
+
+    <!-- 메인 -->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">2021, 1, 26, 수요일</div>
+
+      <div class="message-row">
+        <img src="img/IMG_2875.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">어마</span>
+          <div class="message__info">
+            <span class="message__bubble">오늘은 회사 회식이 있어 ㅠㅠ</span>
+            <span class="message__time">20:13</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row__own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">어마 빤니와 배거파</span>
+            <span class="message__time">20:13</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column"><i class="far fa-plus-square fa-lg"></i></div>
+      <div class="reply__column">
+        <input type="text" placeholder="내용을 입력하세요." />
+        <i class="far fa-grin-alt fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

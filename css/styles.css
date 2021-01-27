@@ -1,5 +1,5 @@
 /* font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"); */
 
 @import "reset.css";
@@ -21,6 +21,7 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
   color: #2f363e;
